@@ -1,0 +1,11 @@
+# node_modules folders
+node_modules/
+
+# IDE folders
+.idea/
+
+# Gulp folders
+dist/
+
+# Logs
+logs/

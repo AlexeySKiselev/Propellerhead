@@ -1,0 +1,11 @@
+# Build folder
+public/build/
+
+# node_modules
+node_modules/
+
+# Gulp folder
+disp/
+
+# IDE folder
+.idea/

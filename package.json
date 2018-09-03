@@ -1,0 +1,60 @@
+{
+  "name": "phcustomers",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node server.js",
+    "build": "node node_modules/gulp/bin/gulp",
+    "build:vendors": "node node_modules/gulp/bin/gulp scripts:vendors:min",
+    "migration:createusers": "node migration/createUsers",
+    "migration:populatecustomers": "node migration/populateCustomers",
+    "migration": "npm migration:createusers && migration:populatecustomers"
+  },
+  "author": {
+    "name": "Alexey S. Kiselev",
+    "email": "alexeys.kiselev@yahoo.com"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.18.3",
+    "connect-mongo": "^2.0.1",
+    "cookie-parser": "^1.4.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "graphql-tag": "^2.9.2",
+    "mongoose": "^5.2.8",
+    "morgan": "^1.9.0",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "react": "^16.4.2",
+    "react-basic-table": "^1.0.14",
+    "react-dom": "^16.4.2",
+    "reactable": "^1.1.0",
+    "winston": "^3.0.0"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babelify": "^8.0.0",
+    "browserify": "^16.2.2",
+    "buffer": "^5.2.0",
+    "eslint": "^5.4.0",
+    "eslint-plugin-react": "^7.11.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-babel": "^7.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-minify": "^3.1.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-rename": "^1.4.0",
+    "gulp-uglify": "^3.0.1",
+    "merge-stream": "^1.0.1",
+    "pump": "^3.0.0",
+    "uglify-js-harmony": "^2.7.7",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0"
+  }
+}

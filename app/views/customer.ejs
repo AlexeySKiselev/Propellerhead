@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <link href="/styles.min.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<div class="top_menu">
+    <ul class="clearfix">
+        <li>
+            <a href="/api/logout">Logout</a>
+        </li>
+        <li><%= name %></li>
+    </ul>
+</div>
+<div id="app"></div>
+<input type="hidden" id="customer_id" value="<%= cid %>"/>
+<script src="/vendors.js"></script>
+<script src="/customer.min.js"></script>
+</body>
+</html>
